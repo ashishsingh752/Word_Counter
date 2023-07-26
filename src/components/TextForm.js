@@ -66,35 +66,35 @@ export default function TextForm(props) {
               }
             }}
             style={{
-              backgroundColor: props.mode === 'light' ? 'white' : '#6e6e80',
+              backgroundColor: props.mode === 'light' ? 'white' : 'rgb(176, 179, 188)',
               color: props.mode === 'light' ? 'black' : 'white',
             }}
-            rows="10"
+            rows="8"
           ></textarea>
         </div>
         <button
-          className={`btn btn-primary mx-2 ${props.mode === 'dark' ? 'btn-dark' : ''}`}
+          className={`btn btn-primary mx-2 my-1 ${props.mode === 'dark' ? 'btn-dark' : ''}`}
           onClick={handleUpclick}
           style={{ backgroundColor: props.mode === 'dark' ? '#6e798f' : '' }}
         >
           Convert to Uppercase
         </button>
         <button
-          className={`btn btn-primary mx-2 ${props.mode === 'dark' ? 'btn-dark' : ''}`}
+          className={`btn btn-primary mx-2 my-1  ${props.mode === 'dark' ? 'btn-dark' : ''}`}
           onClick={handleLoclick}
           style={{ backgroundColor: props.mode === 'dark' ? '#6e798f' : '' }}
         >
           Convert to Lowercase
         </button>
         <button
-          className={`btn btn-primary mx-2 ${props.mode === 'dark' ? 'btn-dark' : ''}`}
+          className={`btn btn-primary mx-2 my-1  ${props.mode === 'dark' ? 'btn-dark' : ''}`}
           onClick={handleRemoveExtraSpaces}
           style={{ backgroundColor: props.mode === 'dark' ? '#6e798f' : '' }}
         >
           Remove Extra Spaces
         </button>
         <button
-          className={`btn btn-primary mx-2 ${props.mode === 'dark' ? 'btn-dark' : ''}`}
+          className={`btn btn-primary mx-2 my-1 ${props.mode === 'dark' ? 'btn-dark' : ''}`}
           onClick={handleRestoreClick}
           style={{ backgroundColor: props.mode === 'dark' ? '#6e798f' : '' }}
         >
